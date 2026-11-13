@@ -105,7 +105,7 @@ function sync(pulse){
  $("favc").textContent=fav.size;
  if(pulse){$("favn").classList.remove("bump");void $("favn").offsetWidth;$("favn").classList.add("bump")}
  const l=[...fav].map(x=>items[x].n);
- $("favtxt").textContent=l.length?"Kain pilihanmu sudah siap dikirim ke penjual:":"Tandai hati pada kain yang kamu suka, lalu kirim daftarnya ke penjual lewat WhatsApp.";
+ $("favtxt").textContent=l.length?"Kain pilihanmu sudah siap dikirim ke penjual:":"Pilih sarung yang kamu suka, lalu kirim daftarnya ke penjual lewat WhatsApp.";
  $("favlist").innerHTML=l.map(n=>"<span>"+n+"</span>").join("");
  $("wa").href=WA+encodeURIComponent(l.length?"Horas! Saya tertarik dengan: "+l.join(", ")+". Mohon info ketersediaan dan harga.":"Horas! Saya ingin bertanya tentang sarung Simalungun.");
  if(cur!=null)$("dfav").textContent=fav.has(cur)?"♥ Hapus dari favorit":"♡ Tambah ke favorit";
